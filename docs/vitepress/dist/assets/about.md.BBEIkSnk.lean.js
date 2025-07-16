@@ -1,0 +1,1 @@
+import{_ as e,c as t,o,ae as i}from"./chunks/framework.Dgg8-8ov.js";const h=JSON.parse('{"title":"About Aalenia","description":"","frontmatter":{},"headers":[],"relativePath":"about.md","filePath":"about.md"}'),n={name:"about.md"};function r(s,a,l,c,d,m){return o(),t("div",null,a[0]||(a[0]=[i("",10)]))}const p=e(n,[["render",r]]);export{h as __pageData,p as default};
