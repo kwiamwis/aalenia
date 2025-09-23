@@ -1,8 +1,8 @@
 :root {
-  --vp-c-brand-1: #916dff;
-  --vp-c-brand-2: #b098ff;
-  --vp-c-brand-3: #916dff;
-  --vp-c-brand-soft: #e17eff;
+  --vp-c-brand-1: #9966ff;
+  --vp-c-brand-2: #aa80ff;
+  --vp-c-brand-3: #9966ff;
+  --vp-c-brand-soft: #aa80ff;
 }
 
 /* https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css */
