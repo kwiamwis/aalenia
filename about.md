@@ -4,7 +4,7 @@ massively multiplayer online dinosaur simulation game which allows game owners t
 ## Origin
 Aalenia began as a community centered around the develpoment and testing of a JavaScript application for PoT community servers. We sought to create an open-source docker image for servers to deploy locally, to eliminate the issues other bot applications face: latency, downtime, inadequate features, and inadequate customisability.
 ## Mods and Applications
-The application developers have moved most application features to the **Aalenian Utilities** mod, though the original application still has some unique functionality and will be available as an open-source project once complete. In addition to this mod, we create a number of mods to improve the community server experience ranging from plant additions to character additions.
+The application developers have moved most application features to the Aalenian Utilities mod, though the original application still has some unique functionality and will be available as an open-source project once complete. In addition to this mod, we create a number of mods to improve the community server experience ranging from plant additions to character additions.
 ## Servers
 This community operates a number of PoT community servers to both showcase our mods and applications, and provide a unique dinosaurian experience for players.
 ## Name
