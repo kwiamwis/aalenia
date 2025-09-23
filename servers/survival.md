@@ -4,7 +4,7 @@ next: true
 ---
 
 # Aalenian Survival
-The **Aalenian Survival** Path of Titans Server is is structured like officials but with modded playables.
+The **Aalenian Survival** Path of Titans Server is structured like officials but with modded playables.
 ## Growth
 * The hatchling tutorial cave is disabled and you will spawn at 0 growth
 * Quest rewards (growth and marks) are multiplied by 5

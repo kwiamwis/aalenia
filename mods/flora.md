@@ -1,5 +1,5 @@
 # Aalenian Flora
-**Aalenian Flora** adds multiple types of plants and fungi to Path of Titans, accessable in the creator mode menu
+Aalenian Flora adds multiple types of plants and fungi to Path of Titans as creator mode objects, accessable in the creator mode menu.
 ## Interactable Flora
 * Amanita (fungi) cluster - eating gives base game mushroom effect
 * Boletus (fungi) cluster - eating gives base game mushroom effect
@@ -11,9 +11,16 @@
 * Giant Amanita (fungi) and Boletus (fungi)
 * Large Alnus (alder) trees whose branches are landable
 ## Chat Commands
-Easily spawn Nymphaea and Lakeweed at water level with /nymphaea and /lakeweed
-## VFX
-Object appearances respond to weather by blowing more in the wind and looking wet in the rain, if graphics are not set to low
+::: details /Nymphaea
+Spawn Nymphaea at water level at you character's lateral coordinates
+> creator access required
+:::
+
+::: details /Lakeweed
+Spawn lakeweed at water level at you character's lateral coordinates
+> creator access required
+:::
+
 ## Installation
 Add the following line of code to your server's GameUserSettings.ini
 ```ini
