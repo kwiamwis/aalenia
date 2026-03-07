@@ -1,0 +1,12 @@
+# DupaBot Privacy Policy
+The following privacy policy describes how Aalenia ("us," "we," or "our") uses the personal information of users of the Service. By using the Service, you agree to the collection and use of information under this policy. The Service includes the Discord application called DupaBot.
+## Discord and Path of Titans Data Collection
+The Service collects data necessary to perform its intended functions as a Discord bot integrating with Path of Titans community servers, and as an informational website. The data collected from Discord servers where DupaBot is installed includes user IDs, usernames, server nicknames, discord messages, discord interactions, discord reactions, channel IDs, and server IDs, among other forms of data. The data collected from Path of Titans community servers where DupaBot is in use includes chat messages, chat commands, usernames, roles, server UUIDs, server IP addresses and ports, and any other data provided by the source query protocol or given by webhooks.
+## Payments
+We may provide paid products and/or services within the Service. In that case, we use third-party services for payment processing (e.g., payment processors). We will not store or collect your payment card details. That information is provided directly to our third-party payment processors, whose use of your personal information is governed by their Privacy Policy. These payment processors adhere to the standards set by PCI-DSS as managed by the PCI Security Standards Council, which is a joint effort of brands like Visa, MasterCard, American Express, and Discover. PCI-DSS requirements help ensure the secure handling of payment information.
+## Data Sharing
+We will not share your personal information with any third parties except when required by law.
+## Data Deletion
+To request the deletion of stored data, visit the official DupaBot support Discord server whose link is found on this website.
+## Revisions
+We reserve the right to revise this Policy at any time. We will provide notice of any material revision 30 or more days prior to the date on which the revision takes effect. What constitutes a material revision will be determined at our sole discretion. You agree to be bound by the revised Policy if you access the Service after the revision takes effect. You shall not use the Service after the revision takes effect if you do not agree to the revised Policy.

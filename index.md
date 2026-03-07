@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: Welcome to Aalenia
-  tagline: Home of the Aalenian Modifications Path of Titans (PoT) modding team and associated PoT community servers
+  tagline: A video game modding, hosting, and playing community
   image:
     src: /LargeLogo.png
     alt: VitePress
@@ -13,19 +13,19 @@ hero:
       text: Discord
       link: https://discord.aalenia.com
     - theme: brand
-      text: Trello
-      link: https://trello.aalenia.com
+      text: GitHub
+      link: https://github.com/kwiamwis
     - theme: brand
       text: Donations
       link: https://paypal.me/kwiamwis
       
 features:
-  - title: PoT Mods and Applications
-    link: /mods/utilities
+  - title: Mods and Applications
+    link: /potapps/utilities
   - title: Community Servers
-    link: /servers/survival
+    link: /potservers/survival
   - title: Community Guidelines
     link: /guidelines
-  - title: Report Bugs
+  - title: Bug Reports
     link: /bugs
 ---
