@@ -5,7 +5,7 @@ import {
 export default defineConfig({
   lang: 'en-US',
   title: 'Aalenia',
-  description: 'Home of the Aalenian Modifications Path of Titans (PoT) modding team and associated PoT community servers',
+  description: 'A video game modding, hosting, and playing community',
   head: [['link', { rel: 'icon', type: 'image/svg', href: '/LargeLogo.png' }]],
   themeConfig: {
 //logo
@@ -130,3 +130,4 @@ export default defineConfig({
     },
   }
 });
+
