@@ -1,5 +1,5 @@
 # Aalenian Utilities
-Aalenian Utilities adds a number of interactable objects, gameplay features, chat commands, and administrative tools to Path of Titans.
+Aalenian Utilities adds a number of interactable objects, gameplay features, chat commands, and administrative tools to Path of Titans. This mod is fully modular such that any feature you do not like can be disabled.
 ## Initiation
 At least one Aalenian Controller creator mode object must exist on the server to initiate the mod, so add one to your default creator mode save!
 
@@ -28,15 +28,13 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 
 `Attribute [Attribute]`  Returns your character's specified attribute value
 
-`AU/AalenianUtilities`  Opens documentation and configuration for Aalenian Utilities
-
 `C/Commands`  Lists chat commands currently available to everyone
 
 `Discord`  Returns the discord invite link for this server copied to your clipboard
 
 `Dupa`   (/≧▽≦)/
 
-`HUD [Type]`  Toggles your hud enhancements. Types: FPS, Clock, Movement, GroupInfo, Ping, PlayerCount
+`HUD [Type] -a? -c?`  Toggles your hud enhancements. Types: FPS, Clock, Movement, GroupInfo, Ping, PlayerCount. Use flag 'a' to add all or flag 'c' to clear all
 
 `Invisibility`  Toggles your character's visibility on your client for photographic purposes, other players still able to see you
 
@@ -137,12 +135,6 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 >
 >RCON Supported
 
-`Nest [Username/AGID]?`  Initiates a teleport sequence to your character's nest location if the nest is high enough in health. If you have the permissions, you may teleport other players' characters immediatly without checks, cooldowns, or cost
->
->+permission=teleport
->
->RCON Supported
-
 `Poke [Username/AGID]? -r=[TargetedPlayerRadiusCentimeters]?`  Gives someone's character a poke! If you have the permissions you can poke en masse
 >
 >+permission=set attribute
@@ -230,7 +222,7 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 >
 >RCON Supported
 
-`ResetAalenianUtilities`  'Factory reset' the Aalenian Utilities application
+`ClearSaveGame [SaveGameSlotName]`  Deletes the save game object in a slot
 >
 >+permission=manage
 >
@@ -532,15 +524,15 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 >
 >RCON Supported
 
-`RS/Restore [Username/AGID]? -r=[TargetedPlayerRadiusCentimeters]?`  Heals, removes all effects from, and removes ability cooldowns from a character
+`ResetAalenianUtilities`  'Factory reset' the Aalenian Utilities application
 >
->+permission=heal
+>+permission=manage
 >
 >RCON Supported
 
-`Roof [Username/AGID]? -r=[TargetedPlayerRadiusCentimeters]?`  Sends a character to the world roof
+`RS/Restore [Username/AGID]? -r=[TargetedPlayerRadiusCentimeters]?`  Heals, removes all effects from, and removes ability cooldowns from a character
 >
->+permission=teleport
+>+permission=heal
 >
 >RCON Supported
 
@@ -559,6 +551,12 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 `SetImpactDamageMultiplier [Username/AGID]? -m=[ImpactDamageMultiplier] -r=[TargetedPlayerRadiusCentimeters]?`  Sets a character's flight impact damage multiplier
 >
 >+permission=set attribute
+>
+>RCON Supported
+
+`SetJoinRole [JoinRole]?`  Sets the role players will promote to when they join the server if they have no other roles. Run without the [JoinRole] argument to delete the current join role
+>
+>+permission=manage
 >
 >RCON Supported
 
@@ -712,7 +710,8 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 :::
 
 ## Gameplay Features
-### Configurable Teleportation System
+All Gameplay features are optional and configurable!
+### Command-Based Teleportation System
 * Unlimited custom spawn locations, each configurable costs and cooldowns
 * Cooldowns can be per-character or per-player
 * `/TP` brings up a user interface with the selectable locations
@@ -721,7 +720,7 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 * Optional post-teleport immunity, with which players cannot deal or recieve damage for a time
 * Optionally enable each character's nest as a teleport location for that character with a configurabel cost and cooldown, accessable with `/Nest`
 * Enable players to use `/Home` to teleport to their homecaves, optionally requiing the comfortable nest effect
-### Lodestones and Telestones
+### Object-Based Teleportation System: Lodestones and Telestones
 * Lodestones can replace waystones, allowing Lodestone to Lodestone solo-friendly teleportation
 * Lodestones can keep the traditional waystone function, replace it with a modded invite system, or remove all invite-based teleportation systems
 * Telestones are like Lodestones but can be placed anywhere from the configuration menu instead of replacing Waystones. They allow Telestone to Telestone solo-friendly teleportation and can employ a modded invite system
@@ -729,18 +728,18 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 * Telestones and Lodestones share a global cost and cooldown, cooldowns applying on a per-character scale
 * The `/TP` menu can be configured to allow teleports to Telestones/Lodestones, and the stones can be configured to allow access to the teleports normally reserved to the `/TP` user interface
 * Telestones/Lodestones can employ an anti-camping system
-### Optional Custom Spawning Features
+### Custom Spawning Features
 * Unlimited custom spawn locations, each configurable to character locomotion type
 * Spawn locations can be one custom point, a random selection from an array of custom points, an launch at a random velocity from a point (no fall damage!), or a PoI. PoI spawns can be unsafe or safe, safe meaning characters spawn at real map spawn points (safe spawns will fail if no valid real map spawn points exist)
 * Temporary spawn immunity, with which players cannot deal or recieve damage for a configurable amount of seconds upon spawning
 * Set growth on spawn
 * Set or give marks on spawn
 * Characters spawn at their nest if it is above a threshold
-### Optional Banking System
+### Banking System
 * The banker NPC or the optional `/Bank` bring up a bank account interface
 * Enable player accounts, character accounts, or both! Character accounts are reccomended
 * Optional transfers between player bank accounts
-### Configurable Advanced Skin Customization
+### Advanced Skin Customization
 * The taxadermist NPC or the optional `/Skin` bring up a menu allowing more refined skin customization than the vanilla game can provide
 * Realism-safe mode which only allows hue changes
 * Role-play servers can emulate pigmentation conditions like albanism, leucism, and melanism
@@ -750,18 +749,22 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 * Exploit-proof (cannot be fooled by players logging out of characters before death)
 * Use RCON to get information from this custom leaderboard to display elsewhere
 * Enable or restrict in-game access to the leaderboard as needed
-### Optional Chat Information
+### Gameplay Information Chat Messages
 * Death mesages
 * Join and leave messages
-### Optional Environmental Enhancements
+### Environmental Enhancements
 * Impact crater flooding on Gondowa
 * Configurable resource replenishment
-### Optional Growth Enhancements
+### Growth System Enhancements
 * Scale passive growth with hunger and thirst
 * Scale passive growth with health
 * Scale passive growth with current growth level
-### Optional Combat Enhancements
+### Combat Enhancements
 * Post-kill buff
+### HUD Enhancements
+* Clock displaying in-game time
+* FPS, ping, player count, and group information widgets in the upper-left corner
+* Enhanced movement gauges in the bottom-center displaying whether your character's sprint mode or trot mode are enabled, and whether it is swimming or underwater
 ## Creator Mode Objects
 * Aalenian Controller: one or more must exist on the server
 * Amplistone: allows players to change growth levels
@@ -778,7 +781,7 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 * Home Rock: allows access to the home cave
 * Safety Cone: plain ol' traffic cone
 ## Webhooks
-New webhooks are available for you to add to your server's Game.ini, see them just below!
+New webhooks are available for you to add to your server's Game.ini, see them just below! These will only trigger if in your Game.ini and if the mod is initiated and active.
 ```ini
 [ServerWebhooks]
 PlayerVoiceCall=""
