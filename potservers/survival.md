@@ -13,8 +13,8 @@ The **Aalenian Survival** Path of Titans Server is structured like officials but
 * The Aalenian Utilities and Flora mods enhance the environment and gameplay
 ## Growth and Marks
 * The hatchling tutorial cave is disabled and you will spawn at 0 growth
-* Quest rewards (growth and marks) are multiplied by 1.5
-* Death removes 0.125 growth, or half of a growth stage, and can set you back to previous growth stages
+* Quest rewards (growth and marks) are multiplied by 2 so growing lots of modded characters is not tedious
+* Death removes 0.05 growth, and can set you back to previous growth stages
 ## Teleportation
 * Waystones are transformed into solo-friendly Lodestones, allowing transport from one to another or to Telestones
 * Telestones can be found across the map, allowing transport from one to another or to Lodestones
