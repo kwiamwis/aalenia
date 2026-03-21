@@ -2,7 +2,7 @@
 DupaBot is an open-source JavaScript application which integrates Path of Titans (PoT) community servers with Discord community servers. One instance of DupaBot should run per Discord server, and can manage multiple PoT servers. 
 
 A community wishing to employ DupaBot must host it's own instance. The DupaBot application exists as both a Docker image and as a Pterodactyl egg and yolk combination. Either version should run on the same hardware as your PoT servers.
-## What is a Self-Hosted Discord Application?
+## Why use a Self-Hosted Discord Application?
 Most Discord applications, also called bots, are added to Discord servers with the click of a button and set up on a third-party website or with a few slash commands. These applications only work because third-parties host them. Such a setup performs poorly at recieving a stream of many webhooks from a video game or executing many remote commands in that game.
 
 The solution to this poor performance is for game hosting communities to host their own Discord application on the same hardware as their games. Such communities may register a Discord application in the [Discord developer portal](https://discord.com/developers/applications) and register a bot user for that application. Then it is possible to code and deploy the application in any language, though the most common are JavaScript and Python. 
