@@ -8,8 +8,8 @@ Aalenian Flora adds multiple types of plants, fungi, rocks, insects, and shells 
 * Mud pile (treeless)
 * Waterstones cluster - eating replenishes some thirst
 ### Inexhaustible Food Source CMO
-* Canna aeterna - forever flowers
-* Taxus aeterna - forever berries
+* Canna aeterna patch - forever flowers
+* Taxus aeterna patch - forever berries
 ## Non-Interactable CMO
 * Large Alnus (alder) trees whose branches have collision
 ## Nest and Home Cave Decorations
