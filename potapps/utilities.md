@@ -22,6 +22,8 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 
 ::: details Unrestricted
 
+`AU/AalenianUtilities`  Opens documentation and configuration for Aalenian Utilities
+
 `AGID [Username/AGID]?`  Returns a player's AGID copied to your clipboard
 >
 >RCON Supported
@@ -32,13 +34,9 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 
 `Discord`  Returns the discord invite link for this server copied to your clipboard
 
-`Dupa`   (/≧▽≦)/
-
-`HUD [Type] -a? -c?`  Toggles your hud enhancements. Types: FPS, Clock, Movement, GroupInfo, Ping, PlayerCount. Use flag 'a' to add all or flag 'c' to clear all
+`HUD [Type]? -a? -c?`  Brings up the HUD enhancement menu or toggles specific hud enhancements. Types: FPS, Clock, Movement, GroupInfo, Ping, PlayerCount. Use flag 'a' to add all or flag 'c' to clear all
 
 `Invisibility`  Toggles your character's visibility on your client for photographic purposes, other players still able to see you
-
-`LoneAteo`  doubles your character's polygon count
 
 `Menu`  Shows the escape menu
 
@@ -67,7 +65,7 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 >
 >RCON Supported
 
-`Bank [AccountType]?`  Opens your character or player bank account from anywhere. Specify account type as 'Player' or 'Character' if the server has both enabled. Shortcut the menu with '/Withdraw [Marks] [AccountType]?' and '/Deposit [Marks] [AccountType]?'. If transfers and player accounts are enabled you may use '/Transfer [Username/AGID] [Marks]'
+`Bank [AccountType]?`  Opens your character or player bank account from anywhere. Specify account type as 'Player' or 'Character' if the server has both enabled; failure to specify will result in the player account opening. Shortcut the menu with '/Withdraw [Marks] [AccountType]?' and '/Deposit [Marks] [AccountType]?'. If transfers and player accounts are enabled you may use '/Transfer [Username/AGID] [Marks]'
 >
 >+permission=setmarks
 
@@ -77,9 +75,19 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 >
 >RCON Supported
 
+`ClaytonWasHere`  Clayton was here...or was he?
+>
+>+permission=manage
+>
+>RCON Supported
+
 `Deposit [Marks] [AccountType]?`  Deposits marks from your character's purse into your character or player bank account. Specify account type as 'Player' or 'Character' if the server has both enabled
 >
 >+permission=setmarks
+
+`Dupa`   (/≧▽≦)/
+>
+>+permission=manage
 
 `FillNest [Username/AGID]? -r=[TargetedPlayerRadiusCentimeters]?`  Fills your character's nest with all resources and sets its health to 100%. If you have the permissions, you may fill other players' characters' nests
 >
@@ -91,7 +99,7 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 >
 >+permission=setmarks
 
-`G/Grow/Growth [GrowthStage]? -o?`  Brings up a menu allowing you to select your growth. Shortcut the menu by specifying a growth stage or numerical value. Only usable when able to edit abilities and not in combat. The flag 'o' will, if you have the permissions, override the ability editing state check
+`G/Growth/Grow [GrowthStage]? -o?`  Brings up a menu allowing you to select your growth. Shortcut the menu by specifying a growth stage or numerical value. Only usable when able to edit abilities and not in combat. The flag 'o' will, if you have the permissions, override the ability editing state check
 >
 >+permission=set attribute
 
@@ -119,11 +127,15 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 >
 >RCON Supported
 
-`LB/Leaderboard -r?`  Shows the leaderboard. If run remotely or run with flag 'r' the command returns the leaderboard information in JSON copied to your clipboard
+`LB/Leaderboard --r? --d? --k? --kd?`  Shows the leaderboard. If run remotely or run with flag 'r' the command returns the leaderboard information in JSON copied to your clipboard. Flags 'd', 'k', and 'kd' when run remotely or with 'r' will return an amount of the relevant information that does not exceed the single page return limit
 >
 >+permission=playerinfo
 >
 >RCON Supported
+
+`LoneAteo`  doubles your character's polygon count
+>
+>+permission=manage
 
 `Marks`  Gives your active character marks! Cooldowns may apply
 >
@@ -157,15 +169,15 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 >
 >RCON Supported
 
-`TP -u=[Username/AGID]? [LocationName]?`  Shows a menu of enabled teleport location buttons which you may press in order to initiate the teleport sequence for your character. Shortcut the menu with /TP [LocationName]. If you have the permissions you may teleport other players' characters immediatly and without cost or cooldown
+`Transfer [Username/AGID] [Marks]`  Transfers marks from your player bank account to that of another player. Transfer marks to an offline player's account by specifying their AGID rather than their username, but be careful that you do not type the wrong AGID in or your marks will be lost
+>
+>+permission=setmarks
+
+`TP/Transport -u=[Username/AGID]? [LocationName]?`  Shows a menu of enabled teleport location buttons which you may press in order to initiate the teleport sequence for your character. Shortcut the menu with /TP [LocationName]. If you have the permissions you may teleport other players' characters immediatly and without cost or cooldown
 >
 >+permission=teleport
 >
 >RCON Supported
-
-`Transfer [Username/AGID] [Marks]`  Transfers marks from your player bank account to that of another player. Transfer marks to an offline player's account by specifying their AGID rather than their username, but be careful that you do not type the wrong AGID in or your marks will be lost
->
->+permission=setmarks
 
 `U/Unstick/Unstuck [Username/AGID]? -r=[TargetedPlayerRadiusCentimeters]?`  Unsticks your poor character! If you have the permissions you may use this command on other players' characters
 >
@@ -185,6 +197,12 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 
 :::
 ::: details Restricted
+
+`AbridgedListPlayers`   Returns sparse player information for all players in JSON copied to your clipboard
+>
+>+permission=playerinfo
+>
+>RCON Supported
 
 `AddLocationCoordinates -u=[Username/AGID]? [LocationName]`  Adds the coordinates of a character to a location's coordinate array. Teleports to and spawns at a location use one coordinate at random
 >
@@ -222,6 +240,12 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 >
 >RCON Supported
 
+`ClearCustomSkin [Username/AGID]`  Clears a character's custom skin
+>
+>+permission=manage
+>
+>RCON Supported
+
 `ClearSaveGame [SaveGameSlotName]`  Deletes the save game object in a slot
 >
 >+permission=manage
@@ -239,10 +263,6 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 >+permission=set attribute
 >
 >RCON Supported
-
-`CM/Creator/CreatorMode`  Toggles creator mode when you are in spectator mode
->
->creator access required
 
 `CMOLocation [X] [Y] [Z]`  Moves your focused creator mode object to the specified coordinates
 >
@@ -286,6 +306,10 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 >
 >+permission=manage
 
+`CM/Creator/CreatorMode`  Toggles creator mode. This command will not remove you from spectator mode, just creator mode
+>
+>creator access required
+
 `Critter [Username/AGID/[X] [Y] [Z]]? -n=[CritterName]? -q=[CritterQuantity]? -g=[CritterGrowth]? -a? -s?`  Spawns critters at a location. Flag 'a' ensures the critter will be albino, which is otherwise random. Flag 's' allows subsurface spawns by spawning critters at a location's exact height rather than on the surface
 >
 >+permission=set attribute
@@ -296,7 +320,7 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 >
 >RCON Supported
 
-`D -f?`  Clears the skies and brings on the day. Flag 'f' freezes weather and time if not run remotely
+`D/DayTime -f?`  Clears the skies and brings on the day. Flag 'f' freezes weather and time if not run remotely
 >
 >+permission=weather
 >
@@ -452,12 +476,6 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 >
 >RCON Supported
 
-`N -f?`  Clears the skies and brings on the night. Flag 'f' freezes weather and time if not run remotely
->
->+permission=weather
->
->RCON Supported
-
 `Nick [Username/AGID]? [Nickname]`  Changes a player's username for the server session. Avoid setting multiple players' names to the same nickname or chat commands will not know which player to target
 >
 >+permission=nick
@@ -467,6 +485,18 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 `NightLuminosity [Luminosity]`  Sets the night luminosity to a value of your choosing. Select 30 to emulate a full moon, and 3.5 to emulate a new moon
 >
 >+permission=manage
+>
+>RCON Supported
+
+`N/NightTime -f?`  Clears the skies and brings on the night. Flag 'f' freezes weather and time if not run remotely
+>
+>+permission=weather
+>
+>RCON Supported
+
+`Omnivore [Username/AGID]? -d=[DurationSeconds]? -r=[TargetedPlayerRadiusCentimeters]?`  Makes a character a true omnivore
+>
+>+permission=set attribute
 >
 >RCON Supported
 
@@ -536,12 +566,6 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 >
 >RCON Supported
 
-`RS/Restore [Username/AGID]? -r=[TargetedPlayerRadiusCentimeters]?`  Heals, removes all effects from, and removes ability cooldowns from a character
->
->+permission=heal
->
->RCON Supported
-
 `SetBalance [Username/AGID]? [AccountType] [Balance]`  Sets a player's or character's bank balance. Specify account type 'Player' or 'Character'
 >
 >+permission=setmarks
@@ -602,10 +626,6 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 >
 >RCON Supported
 
-`SM/Spectator/SpectatorMode`  Toggles spectator mode
->
->spectator access required
-
 `Smite [Username/AGID]? -r=[TargetedPlayerRadiusCentimeters]?`  Smite thy enemies or smite thyslef if thou wouldst
 >
 >+permission=set attribute
@@ -617,6 +637,10 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 >+permission=teleport
 >
 >RCON Supported
+
+`SM/Spectator/SpectatorMode`  Toggles spectator mode
+>
+>spectator access required
 
 `SystemChat [ChatMessage]`  Send a message as yourself in the 'System' chat channel
 >
@@ -781,43 +805,47 @@ All Gameplay features are optional and configurable!
 * Home Rock: allows access to the home cave
 * Safety Cone: plain ol' traffic cone
 ## Webhooks
-New webhooks are available for you to add to your server's Game.ini, see them just below! These will only trigger if in your Game.ini and if the mod is initiated and active.
+New webhooks are available for you to add to your server's Game.ini, see them just below! These will only trigger if in your Game.ini and if the mod is initiated and active. 
 ```ini
 [ServerWebhooks]
 PlayerVoiceCall=""
+; Called when a character vocalizes
 PlayerChangeRestState=""
+; Called when a character changes rest states (default, sitting, or sleeping)
+PlayerKilledAdvanced=""
+; Called when a character dies, regardless of whether a player is in control of the character as it dies
 ```
 ::: details PlayerVoiceCall
 
 ```json
 {
-    "VoiceCall": "string",
-    "ServerGuid": "string",
-    "ServerName": "string",
-    "PlayerName": "string",
-    "AlderonId": "string",
-    "Role": "string",
-    "bServerAdmin": "boolAsString",
-    "bMuted": "boolAsString",
-    "Platform": "string",
-    "Ping": "floatAsString",
-    "MapName": "string",
-    "Transform": "string",
-    "Location": "string",
-    "LocationTag": "string",
-    "POI": "string",
-    "bSpectatorMode": "string",
-    "bCreatorMode": "string",
-    "CharacterName": "string",
-    "CurrentMarks": "integerAsString",
-    "DinosaurGrowth": "floatAsString",
-    "GroupState": "string",
-    "Diet": "string",
-    "DinosaurType": "string",
-    "CharacterID": "string",
-    "bCharacterFemale": "string",
-    "SkinName": "string",
-    "bInCombat": "boolAsString"
+    "VoiceCall": "Extra6",
+    "ServerName": "Example_Realsim",
+    "PlayerName": "CaptainExample",
+    "AlderonId": "123-456-789",
+    "Role": "Administrator",
+    "bServerAdmin": "true",
+    "bMuted": "false",
+    "Platform": "PT_WINDOWS",
+    "Ping": "77.678574",
+    "MapName": "Island",
+    "Transform": "Translation: X=-216533.290 Y=-82875.440 Z=1055.730 Rotation: P=0.000000 Y=47.406006 R=-0.000000 Scale: X=1.000 Y=1.000 Z=1.000",
+    "Location": "X=-216533.290 Y=-82875.440 Z=1055.730",
+    "LocationTag": "WhiteCliffs",
+    "POI": "White Cliffs",
+    "bSpectatorMode": "false",
+    "bCreatorMode": "false",
+    "CharacterName": "Pam",
+    "CurrentMarks": "30100",
+    "DinosaurGrowth": "1.0",
+    "GroupState": "NotInAGroup",
+    "Diet": "HERBIVORE",
+    "DinosaurType": "Amargasaurus",
+    "CharacterID": "6A536D4470464BF6AC1D8F2461AF4236",
+    "bCharacterFemale": "true",
+    "SkinName": "Backer",
+    "bInCombat": "false",
+    "ServerGuid": "00000000-0000-0000-0000-000000000000"
 }
 ```
 
@@ -825,33 +853,94 @@ PlayerChangeRestState=""
 ::: details PlayerChangeRestState
 ```json
 {
-    "RestState": "string",
-    "ServerGuid": "string",
-    "ServerName": "string",
-    "PlayerName": "string",
-    "AlderonId": "string",
-    "Role": "string",
-    "bServerAdmin": "boolAsString",
-    "bMuted": "boolAsString",
-    "Platform": "string",
-    "Ping": "floatAsString",
-    "MapName": "string",
-    "Transform": "string",
-    "Location": "string",
-    "LocationTag": "string",
-    "POI": "string",
-    "bSpectatorMode": "string",
-    "bCreatorMode": "string",
-    "CharacterName": "string",
-    "CurrentMarks": "integerAsString",
-    "DinosaurGrowth": "floatAsString",
-    "GroupState": "string",
-    "Diet": "string",
-    "DinosaurType": "string",
-    "CharacterID": "string",
-    "bCharacterFemale": "string",
-    "SkinName": "string",
-    "bInCombat": "boolAsString"
+    "RestState": "Default",
+    "ServerName": "Example_Realsim",
+    "PlayerName": "CaptainExample",
+    "AlderonId": "123-456-789",
+    "Role": "Administrator",
+    "bServerAdmin": "true",
+    "bMuted": "false",
+    "Platform": "PT_WINDOWS",
+    "Ping": "77.678574",
+    "MapName": "Island",
+    "Transform": "Translation: X=-216533.290 Y=-82875.440 Z=1055.730 Rotation: P=0.000000 Y=47.406006 R=-0.000000 Scale: X=1.000 Y=1.000 Z=1.000",
+    "Location": "X=-216533.290 Y=-82875.440 Z=1055.730",
+    "LocationTag": "WhiteCliffs",
+    "POI": "White Cliffs",
+    "bSpectatorMode": "false",
+    "bCreatorMode": "false",
+    "CharacterName": "Pam",
+    "CurrentMarks": "30100",
+    "DinosaurGrowth": "1.0",
+    "GroupState": "NotInAGroup",
+    "Diet": "HERBIVORE",
+    "DinosaurType": "Amargasaurus",
+    "CharacterID": "6A536D4470464BF6AC1D8F2461AF4236",
+    "bCharacterFemale": "true",
+    "SkinName": "Backer",
+    "bInCombat": "false",
+    "ServerGuid": "00000000-0000-0000-0000-000000000000"
+}
+```
+:::
+::: details PlayerKilledAdvanced
+Always sent:
+```json
+{
+    "ServerName": "Example_Realsim",
+    "ServerMapName": "Island",
+    "VictimName": "CaptainExample",
+    "VictimAlderonId": "123-456-789",
+    "DamageType": "DT_ATTACK",
+    "VictimDiet": "HERBIVORE",
+    "VictimDinosaurType": "Amargasaurus",
+    "VictimTransform": "Translation: X=-216533.290 Y=-82875.440 Z=1055.730 Rotation: P=0.000000 Y=47.406006 R=-0.000000 Scale: X=1.000 Y=1.000 Z=1.000", 
+    "VictimLocation": "X=-216533.290 Y=-82875.440 Z=1055.730",
+    "VictimLocationTag": "WhiteCliffs",
+    "VictimPOI": "White Cliffs",
+    "VictimPCharacterName": "Pam",
+    "VictimCurrentMarks": "30100",
+    "VictimGrowth": "1.0",
+    "VictimCharacterID": "6A536D4470464BF6AC1D8F2461AF4236",
+    "VictimCharacterFemale": "true",
+    "VictimSkinName": "Backer",
+    "ServerGuid": "00000000-0000-0000-0000-000000000000"
+}
+```
+Sent if a player is in control of the victim character:
+```json
+{
+    "VictimRole": "Administrator",
+    "VictimIsAdmin": "true",
+    "VictimMuted": "false",
+    "VictimPlatform": "PT_WINDOWS",
+    "VictimPing": "77.678574",
+    "VictimGroupState": "NotInAGroup", 
+}
+```
+Sent if the victim character is killed by a character:
+```json
+{
+    "KillerName": "MajorExample",
+    "KillerAlderonId": "123-123-123",
+    "KillerRole": "None",
+    "KillerIsAdmin": "false",
+    "KillerMuted": "false",
+    "KillerPlatform": "PT_WINDOWS",
+    "KillerPing": "77.678574",
+    "KillerGroupState": "InAGroup",
+    "KillerTransform": "Translation: X=-216533.290 Y=-82875.440 Z=1055.730 Rotation: P=0.000000 Y=47.406006 R=-0.000000 Scale: X=1.000 Y=1.000 Z=1.000",
+    "KillerLocation": "X=-216533.290 Y=-82875.440 Z=1055.730",
+    "KillerLocationTag": "WhiteCliffs",
+    "KillerPOI": "White Cliffs",
+    "KillerCharacterName": "Brian",
+    "KillerCurrentMarks": "19500",
+    "KillerGrowth": "1.0",
+    "KillerDiet": "HERBIVORE",
+    "KillerDinosaurType": "Spinosaurus",
+    "KillerCharacterID": "3F58445EB6AE47D493A5B44798AC2265",
+    "KillerCharacterFemale": "false",
+    "KillerSkinName": "Melanistic",
 }
 ```
 :::
