@@ -839,6 +839,7 @@ PlayerKilledAdvanced=""
     "CurrentMarks": "30100",
     "DinosaurGrowth": "1.0",
     "GroupState": "NotInAGroup",
+    "CharacterTag": "Character.Amargasaurus",
     "Diet": "HERBIVORE",
     "DinosaurType": "Amargasaurus",
     "CharacterID": "6A536D4470464BF6AC1D8F2461AF4236",
@@ -873,6 +874,7 @@ PlayerKilledAdvanced=""
     "CurrentMarks": "30100",
     "DinosaurGrowth": "1.0",
     "GroupState": "NotInAGroup",
+    "CharacterTag": "Character.Amargasaurus",
     "Diet": "HERBIVORE",
     "DinosaurType": "Amargasaurus",
     "CharacterID": "6A536D4470464BF6AC1D8F2461AF4236",
@@ -892,8 +894,6 @@ Always sent:
     "VictimName": "CaptainExample",
     "VictimAlderonId": "123-456-789",
     "DamageType": "DT_ATTACK",
-    "VictimDiet": "HERBIVORE",
-    "VictimDinosaurType": "Amargasaurus",
     "VictimTransform": "Translation: X=-216533.290 Y=-82875.440 Z=1055.730 Rotation: P=0.000000 Y=47.406006 R=-0.000000 Scale: X=1.000 Y=1.000 Z=1.000", 
     "VictimLocation": "X=-216533.290 Y=-82875.440 Z=1055.730",
     "VictimLocationTag": "WhiteCliffs",
@@ -904,6 +904,9 @@ Always sent:
     "VictimCharacterID": "6A536D4470464BF6AC1D8F2461AF4236",
     "VictimCharacterFemale": "true",
     "VictimSkinName": "Backer",
+    "VictimCharacterTag": "Character.Amargasaurus",
+    "VictimDiet": "HERBIVORE",
+    "VictimDinosaurType": "Amargasaurus",
     "ServerGuid": "00000000-0000-0000-0000-000000000000"
 }
 ```
@@ -936,11 +939,12 @@ Sent if the victim character is killed by a character:
     "KillerCharacterName": "Brian",
     "KillerCurrentMarks": "19500",
     "KillerGrowth": "1.0",
-    "KillerDiet": "HERBIVORE",
-    "KillerDinosaurType": "Spinosaurus",
     "KillerCharacterID": "3F58445EB6AE47D493A5B44798AC2265",
     "KillerCharacterFemale": "false",
     "KillerSkinName": "Melanistic",
+    "KillerCharacterTag": "Character.Spinosaurus",
+    "KillerDiet": "CARNIVORE",
+    "KillerDinosaurType": "Spinosaurus",
 }
 ```
 :::
