@@ -16,10 +16,11 @@ The **Aalenian PvP** Path of Titans Server is PvP oriented, with easy yet balanc
 ## Marks
 * You may run `/Marks` to receive marks (per-character cooldowns apply!), and this command is run for you when you spawn a character
 * Quest reward marks are multiplied by 5
-* Visit the Banker NPC to place your marks in a per-character bank account
+* Visit a Banker NPC to place your marks in a per-character bank account
 ## Growth
 * Characters spawn as adults
-* Set your character's growth stage if you are not in combat and you can edit abilities with `/growth`, `/grow`, or `/g`
+* Set your character's growth stage permanently if you are not in combat and you can edit abilities with `/growth`, `/grow`, or `/g`
+* Turn your character into a hatchling temporarily if you are not in combat and are able to edit abilities with `/Baby` 
 * Death will not remove a character's growth
 * Quest reward growth is multiplied by 5
 ## Teleportation
@@ -35,10 +36,10 @@ The **Aalenian PvP** Path of Titans Server is PvP oriented, with easy yet balanc
 * The rush of the hunt rewards a post-kill buff called 'Bloodlust'
 ## Custom Skins
 * Visit the Taxadermist NPC to precisely change the colors of your scales or feathers
-## Useful Commands
+## Stuck?
 * `/U`, `/Unstuck`, and `/Unstick` will help you out if you are not in combat
-* `/Baby` turns you into a hatchling temporarily if you are not in combat and are able to edit abilities
 ## Objects of Interest
 * Lunaristones which affect gravity and Regenistones which increase regeneration may be found around the map in various locations
+* Crystals which instill various magical effects when eaten may be found across the map
 ## Rules
 Simply do not violate the rules outlined in the [Community Guidelines](/guidelines)
