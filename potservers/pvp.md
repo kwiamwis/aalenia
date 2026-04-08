@@ -16,7 +16,7 @@ The **Aalenian PvP** Path of Titans Server is PvP oriented, with easy yet balanc
 ## Marks
 * You may run `/Marks` to receive marks (per-character cooldowns apply!), and this command is run for you when you spawn a character
 * Quest reward marks are multiplied by 5
-* Visit a Banker NPC to place your marks in a per-character bank account
+* Visit the Banker NPC to place your marks in a per-character bank account
 ## Growth
 * Characters spawn as adults
 * Set your character's growth stage permanently if you are not in combat and you can edit abilities with `/growth`, `/grow`, or `/g`
