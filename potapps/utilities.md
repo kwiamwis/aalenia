@@ -12,7 +12,7 @@ DefaultCreatorModeSave=RadDefaultName
 ```
 You may instead choose to initiate the mod each server session by running `/InitiateAalenianUtilities` remotely. The Aalenian Controller works by running this command internally on spawn.
 ## Configuration
-Run `/au` in-game to access a configuration and documentation interface.
+Run `/AalenianUtilities` or `/AU` in-game to access a configuration and documentation interface.
 ## Chat Commands
 Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*. 
 * Unrestricted commands are always available to every player
@@ -22,7 +22,7 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 
 ::: details Unrestricted
 
-`AU/AalenianUtilities`  Opens documentation and configuration for Aalenian Utilities
+`AU/AalenianUtilities`  Opens documentation and configuration for Aalenian Utilities, only administrators or those with the 'manage' permission able to change settings
 
 `AGID [Username/AGID]?`  Returns a player's AGID copied to your clipboard
 >
