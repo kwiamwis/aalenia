@@ -11,6 +11,7 @@ Aalenian Flora adds multiple types of plants, fungi, rocks, insects, and shells 
 * Lightning crystal cluster - eating provides enhanced speed and maneuverability
 * Lush grass patch - characters can graze this if they can eat berries
 * Mud pile (treeless)
+* Tree bridge - characters can push the tree down to make a bridge
 * Verdant root cluster - eating significantly replenishes thirst
 * Waterstone cluster - eating significantly replenishes thirst
 ### Inexhaustible Food Source CMO
