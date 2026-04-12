@@ -12,7 +12,9 @@ DefaultCreatorModeSave=RadDefaultName
 ```
 You may instead choose to initiate the mod each server session by running `/InitiateAalenianUtilities` remotely. The Aalenian Controller works by running this command internally on spawn.
 ## Configuration
-Run `/AalenianUtilities` or `/AU` in-game to access a configuration and documentation interface.
+Use the new `Utilities` button in the game's tab menu, or run either `/AalenianUtilities` or `/AU`, to access a configuration and documentation interface.
+
+All players may use the 'Utilities' button to access a menu of enabled features including an available commands list, that list also available by running /c or /commands.
 ## Chat Commands
 Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*. 
 * Unrestricted commands are always available to every player
