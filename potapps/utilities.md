@@ -28,8 +28,6 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 >
 >RCON Supported
 
-`Attribute [Attribute]`  Returns your character's specified attribute value
-
 `C/Commands`  Lists chat commands currently available to everyone
 
 `Discord`  Returns the discord invite link for this server copied to your clipboard
@@ -58,6 +56,10 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 >+permission=set attribute
 >
 >RCON Supported
+
+`Attribute [Attribute]`  Returns your character's specified attribute value
+>
+>+permission=get attribute
 
 `Baby [Username/AGID]? -d=[DurationSeconds]? -r=[TargetedPlayerRadiusCentimeters]?`  Grants your character a temporary hatchling effect if it can edit abilities. If you have the permissions, you may enhatchling other players' characters
 >
@@ -127,7 +129,7 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 >
 >RCON Supported
 
-`LB/Leaderboard --r? --d? --k? --kd?`  Shows the leaderboard. If run remotely or run with flag 'r' the command returns the leaderboard information in JSON copied to your clipboard. Flags 'd', 'k', and 'kd' when run remotely or with 'r' will return an amount of the relevant information that does not exceed the single page return limit
+`LB/Leaderboard --r? --d? --k? --kd? --i=[AGID]?`  Shows the leaderboard. If run remotely or run with flag 'r' the command returns the leaderboard information in JSON copied to your clipboard. Flags 'd', 'k', and 'kd' when run remotely or with 'r' will return an amount of the relevant information that does not exceed the single page return limit. Running with an AGID will return the leaderboard information for that AGID if present
 >
 >+permission=playerinfo
 >
@@ -207,6 +209,12 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 `AddLocationCoordinates -u=[Username/AGID]? [LocationName]`  Adds the coordinates of a character to a location's coordinate array. Teleports to and spawns at a location use one coordinate at random
 >
 >+permission=manage
+>
+>RCON Supported
+
+`Admin [Username/AGID]?`  Toggles administrator status. Be careful...
+>
+>administrator access required
 >
 >RCON Supported
 
@@ -642,6 +650,12 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 >
 >spectator access required
 
+`StealthAdmin [Username/AGID]?`  Toggles administrator stealth mode, where other players cannot see your administrator colors in chat
+>
+>administrator access required
+>
+>RCON Supported
+
 `SystemChat [ChatMessage]`  Send a message as yourself in the 'System' chat channel
 >
 >+permission=systemmessageall
@@ -654,6 +668,12 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 
 :::
 ::: details System
+
+`commandscsv` 
+>
+>+permission=manage
+>
+>RCON Supported
 
 `commandsmarkdown` 
 >
