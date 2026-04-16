@@ -38,6 +38,8 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 
 `Invisibility`  Toggles your character's visibility on your client for photographic purposes, other players still able to see you
 
+`Link [Password]`  External applications may give you a password and ask you to use this command to verify your player account. Only use this command if you trust this server and that external application with your personal data.
+
 `Menu`  Shows the escape menu
 
 `Uptime`  Returns server uptime in seconds
@@ -278,6 +280,14 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 >
 >creator access required
 
+`CMORemoveAllOfClass`  Removes from the world all objects with the same class as your focused creator mode object
+>
+>creator access required
+
+`CMORotate [Roll] [Pitch] [Yaw]`  Rotates your focused creator mode object the specified angle in degrees
+>
+>creator access required
+
 `CMORotation [Roll] [Pitch] [Yaw]`  Sets the rotation of your focused creator mode object to the specified rotation in degrees
 >
 >creator access required
@@ -286,7 +296,7 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 >
 >creator access required
 
-`CMOTessellate [X] [Y] [Z]`  Moves your focused creator mode object the specified number of centimeters
+`CMOTessellate [X] [Y] [Z]`  Moves your focused creator mode object the specified distance in centimeters
 >
 >creator access required
 
@@ -836,6 +846,8 @@ PlayerChangeRestState=""
 ; Called when a character changes rest states (default, sitting, or sleeping)
 PlayerStartEating=""
 ; Called when a character begins eating
+PlayerLink=""
+; Called when a player runs the /link command
 PlayerKilledAdvanced=""
 ; Called when a character dies, regardless of whether a player is in control of the character as it dies
 ```
@@ -913,6 +925,40 @@ PlayerKilledAdvanced=""
 ```json
 {
     "InteractionName": "Salt Rock",
+    "ServerName": "Example_Realsim",
+    "PlayerName": "CaptainExample",
+    "AlderonId": "123-456-789",
+    "Role": "Administrator",
+    "bServerAdmin": "true",
+    "bMuted": "false",
+    "Platform": "PT_WINDOWS",
+    "Ping": "77.678574",
+    "MapName": "Island",
+    "Transform": "Translation: X=-216533.290 Y=-82875.440 Z=1055.730 Rotation: P=0.000000 Y=47.406006 R=-0.000000 Scale: X=1.000 Y=1.000 Z=1.000",
+    "Location": "X=-216533.290 Y=-82875.440 Z=1055.730",
+    "LocationTag": "WhiteCliffs",
+    "POI": "White Cliffs",
+    "bSpectatorMode": "false",
+    "bCreatorMode": "false",
+    "CharacterName": "Pam",
+    "CurrentMarks": "30100",
+    "DinosaurGrowth": "1.0",
+    "GroupState": "NotInAGroup",
+    "CharacterTag": "Amargasaurus",
+    "Diet": "HERBIVORE",
+    "DinosaurType": "Amargasaurus",
+    "CharacterID": "6A536D4470464BF6AC1D8F2461AF4236",
+    "bCharacterFemale": "true",
+    "SkinName": "Backer",
+    "bInCombat": "false",
+    "ServerGuid": "00000000-0000-0000-0000-000000000000"
+}
+```
+:::
+::: details PlayerLink
+```json
+{
+    "LinkPassword": "SuperSecretPassword",
     "ServerName": "Example_Realsim",
     "PlayerName": "CaptainExample",
     "AlderonId": "123-456-789",
