@@ -38,7 +38,7 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 
 `Invisibility`  Toggles your character's visibility on your client for photographic purposes, other players still able to see you
 
-`Link [Password]`  External applications may give you a password and ask you to use this command to verify your player account. Only use this command if you trust this server and that external application with your personal data.
+`Link [Password]`  External applications may give you a password and ask you to use this command to verify your player account. Only use this command if you trust this server and that external application with your personal data
 
 `Menu`  Shows the escape menu
 
