@@ -228,6 +228,12 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 >
 >RCON Supported
 
+`AdvancedListWaters`  Returns detailed water body information in JSON copied to your clipboard
+>
+>+permission=serverinfo
+>
+>RCON Supported
+
 `AdvancedPlayerInfo [Username/AGID]?`  Returns detailed player information in JSON copied to your clipboard
 >
 >+permission=playerinfo
