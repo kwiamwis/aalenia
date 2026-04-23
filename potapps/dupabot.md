@@ -11,7 +11,8 @@ DupaBot is modular such that all functionalities can be disabled. Functionalitie
 * Enabling PoT command execution from Discord
 * Displaying a dashboard for each connected PoT server that shows the players online and server conditions
 * Displaying a leaderboard for each connected PoT server
-These functionalities require webhook recpetion:
+
+These functionalities require webhook reception:
 * Syncing a PoT server's "Global" chat with a Discord chat channel (PlayerChat webhook required)
 * Syncing Discord roles to all connected PoT servers (PlayerLink webhook required)
 * Log any webhooks sent to the application to a Discord channel
