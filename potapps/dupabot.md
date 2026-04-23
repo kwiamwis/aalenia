@@ -18,6 +18,7 @@ These functionalities require webhook reception:
 * Log any webhooks sent to the application to a Discord channel
 ## Pre-Installation
 Before installing and using DupaBot, you must register an application with Discord and create an associated Discord bot user:
+
 0. Please do not try to do this on your phone
 1. Navigate to https://discord.com/developers/applications and create an application with a good name
 2. Add an application profile image
