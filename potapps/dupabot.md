@@ -35,5 +35,3 @@ Before installing and using DupaBot, you must register an application with Disco
 DupaBot is not yet available for public use
 ## DupaBot Pterodactyl Installation
 DupaBot is not yet available for public use
-
-DupaBot does not have meaningful latency, does not collect or store your data, does not demand exclusivity (a PoT server can employ both DupaBot and any other application since it does not require webhooks to function), and is only offline when you tell it to be offline.
