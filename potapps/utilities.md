@@ -642,7 +642,7 @@ Commands are either *unrestricted*, *optionally unrestricted*, or *restricted*.
 
 `Silence [Username/AGID]? -r=[TargetedPlayerRadiusCentimeters]?`  Prevents a character's vocalizations from producing sound
 >
->+permission=set attribute
+>+permission=servermute
 >
 >RCON Supported
 
