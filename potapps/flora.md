@@ -26,5 +26,6 @@ Aalenian Flora adds multiple types of plants, fungi, rocks, insects, and shells 
 ## Installation
 Add the following line of code to your server's GameUserSettings.ini
 ```ini
+[PathOfTitans.Mods]
 EnabledMods=(ModSku="UGC_M_5XN7VDP7PZ_SK", BuildSku="release")
 ```
